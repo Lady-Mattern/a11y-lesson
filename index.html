@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Order | Paglia Family Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <img src="./assets/Paglia Family.png" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="hero-wrapper">            
+            <img src="./assets/pizza-hero.jpeg" id="hero-image">
+            <h1>Start Your Order!</h1>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <p>Star indicates required field</p>
+
+                <div class="form-row">
+                    <label for="first-name" autocomplete="given-name">First Name *</label>
+                    <input type="text" id="first-name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="last-name" autocomplete="family-name">Last Name *</label>
+                    <input type="text" id="last-name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email" autocomplete="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone" autocomplete="tel">Phone Number *</label>
+                    <input type="tel" id="phone" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Pizza Order</legend>
+            </fieldset>
+            <p>Click the big green button to place your order!</p>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>Find us on social media</p>
+        <div id="social-wrapper">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>Copyright &copy;2022 Paglia Family Pizza, All Rights Reserved</p>
+    </footer>
+</body>
+</html>

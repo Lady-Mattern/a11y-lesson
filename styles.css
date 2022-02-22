@@ -1,0 +1,79 @@
+/* * {
+    border: 1px solid gold;
+} */
+
+body {
+    background-color: yellow;
+    height: 100%;
+    margin: 0;
+}
+
+/* Header and Navigation Styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: blue;
+}
+
+#logo {
+    height: 100%;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Main Area Styles */
+
+#hero-wrapper {
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#hero-image {
+    width: 100vw;
+    height: 45vh;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Form Specific Styles */
+
+#submit {
+    color: #FFFFFF;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: blue;
+    text-align: center;
+}
