@@ -6,7 +6,30 @@ body {
     background-color: yellow;
     height: 100%;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* .sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+} */
 
 /* Header and Navigation Styles */
 
@@ -30,10 +53,16 @@ nav ul {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    height: 8vh;
 }
 
 li {
     list-style: none;
+}
+
+li:hover {
+    background-color: #FFFFFF;
 }
 
 nav a {
@@ -60,6 +89,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 3rem;
 }
 
 /* Form Specific Styles */
@@ -76,4 +106,8 @@ h1 {
 footer {
     background-color: blue;
     text-align: center;
+}
+
+footer a {
+    color: #000000;
 }
