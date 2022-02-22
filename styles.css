@@ -9,14 +9,31 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* .sr-only {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
+/* Hide and Display the Skip Link */
+
+/* Hide */
+#skip-link {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
 }
+
+/* Show */
+#skip-link {
+    background: #e77e23;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+  
+#skip-link:focus {
+    transform: translateY(0%);
+}
+
+/* Screen Reader Only Text */
 
 .sr-only {
     border: 0 !important;
@@ -29,7 +46,7 @@ body {
     position: absolute !important;
     width: 1px !important;
     white-space: nowrap !important;
-} */
+} 
 
 /* Header and Navigation Styles */
 
@@ -93,6 +110,15 @@ h1 {
 }
 
 /* Form Specific Styles */
+
+form {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.form-row {
+    margin: 1rem;
+}
 
 #submit {
     color: #FFFFFF;

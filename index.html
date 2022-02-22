@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main" id="skip-link">Skip To Main</a>
     <header>
         <img src="./assets/Paglia Family.png" id="logo">
         <nav>
@@ -22,9 +23,9 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <div id="hero-wrapper">            
-            <img src="./assets/pizza-hero.jpeg" id="hero-image">
+            <img src="./assets/pizza-hero.jpeg" id="hero-image" alt="">
             <h1>Start Your Order!</h1>
         </div>
         <form>
@@ -55,6 +56,103 @@
             </fieldset>
             <fieldset>
                 <legend>Pizza Order</legend>
+
+                <fieldset>
+                    <legend>Crust</legend>
+
+                    <div class="form-row">
+                        <label for="crust">Select a Crust</label>
+                        <select id="crust" required>
+                            <option>
+                                Click to see crust options
+                            </option>
+                            <option>
+                                New York Style
+                            </option>
+                            <option>
+                                Chicago Deep Dish
+                            </option>
+                            <option>
+                                Stuffed Crust
+                            </option>
+                            <option>
+                                Gluten Free
+                            </option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sauce</legend>
+
+                    <div class="form-row">
+                        <label for="sauce">Select a Sauce</label>
+                        <select id="sauce" required>
+                            <option>
+                                Click to see sauce options
+                            </option>
+                            <option>
+                                Marinara
+                            </option>
+                            <option>
+                                White Sauce
+                            </option>
+                            <option>
+                                Garlic and Olive Oil
+                            </option>
+                            <option>
+                                Pesto
+                            </option>
+                        </select>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Toppings</legend>
+                    <p>Select up to 4 toppings</p>
+
+                    <div id="checkbox-group">
+
+                        <div class="form-row">
+                            <label for="pepperoni">Pepperoni</label>
+                            <input id="pepperoni" type="checkbox">
+                        </div>
+
+                        <div class="form-row">
+
+                        <label for="canadian-bacon">Canadian Bacon</label>
+                        <input id="canadian-bacon" type="checkbox">
+                        </div>
+
+                        <div class="form-row">
+
+                        <label for="mozzarella">Mozzarella Cheese</label>
+                        <input id="mozzarella" type="checkbox">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="olives">Black Olives</label>
+                            <input id="olives" type="checkbox">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="peppers">Bell Peppers</label>
+                            <input id="peppers" type="checkbox">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="pineapple">Pineapple</label>
+                            <input id="pineapple" type="checkbox">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="basil">Basil</label>
+                            <input id="basil" type="checkbox">
+                        </div>
+                    </div>
+                </fieldset>
+
             </fieldset>
             <p>Click the big green button to place your order!</p>
             <input type="submit" id="submit">
