@@ -3,7 +3,7 @@
 } */
 
 body {
-    background-color: yellow;
+    background-color: blanchedalmond;
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -92,6 +92,7 @@ nav a {
 #hero-wrapper {
     width: 100vw;
     position: relative;
+    background-color: #000000;
     text-align: center;
     color: white;
 }
@@ -99,6 +100,7 @@ nav a {
 #hero-image {
     width: 100vw;
     height: 45vh;
+    opacity: 0.5;
 }
 
 h1 {
@@ -106,7 +108,8 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 900;
 }
 
 /* Form Specific Styles */
