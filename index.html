@@ -15,7 +15,7 @@
 <body>
     <a href="#main" id="skip-link">Skip To Main</a>
     <header>
-        <img src="./assets/Paglia Family.png" id="logo">
+        <img src="./assets/Paglia Family.png" id="logo" alt="Paglia Family Pizza Logo">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -31,35 +31,35 @@
         </div>
         <form>
             <fieldset>
-                <legend>Personal Info</legend>
+                <legend class="outer-legend"><h2>Personal Info</h2></legend>
 
                 <p>Star indicates required field</p>
 
                 <div class="form-row">
-                    <label for="first-name" autocomplete="given-name">First Name *</label>
-                    <input type="text" id="first-name" required>
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" autocomplete="given-name" required>
                 </div>
 
                 <div class="form-row">
-                    <label for="last-name" autocomplete="family-name">Last Name *</label>
-                    <input type="text" id="last-name" required>
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" autocomplete="family-name" required>
                 </div>
 
                 <div class="form-row">
-                    <label for="email" autocomplete="email">Email *</label>
-                    <input type="email" id="email" required>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" autocomplete="email" required>
                 </div>
 
                 <div class="form-row">
-                    <label for="phone" autocomplete="tel">Phone Number *</label>
-                    <input type="tel" id="phone" required>
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" autocomplete="tel" required>
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Pizza Order</legend>
+                <legend class="outer-legend"><h2>Pizza Order</h2></legend>
 
-                <fieldset>
-                    <legend>Crust</legend>
+                <fieldset class="nested-set">
+                    <legend><h3>Crust</h3></legend>
 
                     <div class="form-row">
                         <label for="crust">Select a Crust</label>
@@ -83,8 +83,8 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Sauce</legend>
+                <fieldset class="nested-set">
+                    <legend><h3>Sauce</h3></legend>
 
                     <div class="form-row">
                         <label for="sauce">Select a Sauce</label>
@@ -109,8 +109,8 @@
 
                 </fieldset>
 
-                <fieldset>
-                    <legend>Toppings</legend>
+                <fieldset class="nested-set">
+                    <legend><h3>Toppings</h3></legend>
                     <p>Select up to 4 toppings</p>
 
                     <div id="checkbox-group">
@@ -121,13 +121,11 @@
                         </div>
 
                         <div class="form-row">
-
                         <label for="canadian-bacon">Canadian Bacon</label>
                         <input id="canadian-bacon" type="checkbox">
                         </div>
 
                         <div class="form-row">
-
                         <label for="mozzarella">Mozzarella Cheese</label>
                         <input id="mozzarella" type="checkbox">
                         </div>
